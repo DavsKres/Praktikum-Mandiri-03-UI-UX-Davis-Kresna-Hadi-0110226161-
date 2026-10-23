@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout HTML5</title>
+
+    <style>
+        * {
+        box-sizing: border-box;
+        }
+
+        body {
+        font-family: 'Times New Roman', Times, serif;
+        margin: 20px auto;
+        max-width: 900px;
+        padding: 10px;
+        background-color: #f5f5f5;
+        color: #222;
+        }
+
+        .header {
+        background-color: rgb(243, 243, 124);
+        border: 1px solid black;
+        padding: 10px;
+        }
+
+        .nav {
+        background-color: wheat;
+        border: 1px solid black;
+        padding: 12px;
+        margin-top: 5px;
+        }
+
+        .nav a {
+        color: black;
+        text-decoration: none;
+        margin-right: 20px;
+        }
+
+        .container {
+        display: flex;
+        gap: 8px;
+        margin-top: 8px;
+        align-items: stretch;
+        }
+
+        .article {
+        background-color: beige;
+        border: 1px solid black;
+        padding: 8px;
+        width: 70%;
+        }
+
+        .article section {
+        background-color: whitesmoke;
+        border: 1px solid #888;
+        padding: 8px;
+        margin-bottom: 8px;
+        }
+
+        .aside {
+        background-color: wheat;
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+        width: 30%;
+        }
+
+        .aside img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        }
+
+        .footer {
+        background-color: rgb(243, 243, 124);
+        border: 1px solid black;
+        padding: 10px;
+        margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>Davis Kresna Hadi</h1>
+        <p>Mendisain Web</p>
+    </header>
+
+    <nav class="nav">
+        <a href="layout.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="#artikel">Artikel</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+
+    <div class="container">
+
+        <article class="article" id="artikel">
+            <h2>Artikel</h2>
+
+            <section>
+                <h3>Section 1</h3>
+                <p>Welcome to my Website.</p>
+            </section>
+
+            <section>
+                <h3>Section 2</h3>
+                <p>This Website use HTML5 and CSS Code</p>
+            </section>
+
+            <section>
+                <h3>Section 3</h3>
+                <p>I'am Learn How to Make some Web Design.</p>
+            </section>
+        </article>
+
+        <aside class="aside">
+            <h3>Foto</h3>
+            <img src="../gambar/dapdap.jpg" alt="Foto Dapis">
+            <p>Diatas adalah foto rahasia dari kembaran Jeff Nicole.</p>
+        </aside>
+
+    </div>
+
+    <footer class="footer" id="kontak">
+        <p>&copy; 2026 Kembaran Jeff Nicole</p>
+    </footer>
+
+</body>
+</html>
